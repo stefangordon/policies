@@ -5,3 +5,5 @@ policies:
      - type: network-interface
        key: 'properties.ipConfigurations[].properties.publicIPAddress.id'
        value: not-null
+  - name: ec2-invalid-ami
+    resource: ec2
