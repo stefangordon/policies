@@ -1,9 +1,6 @@
 policies:
-#  - name: vms-with-public-ip
-#    resource: azure.vm
-#    filters:
-#     - type: network-interface
-#       key: 'properties.ipConfigurations[].properties.publicIPAddress.id'
-#       value: not-null
+  - name: aws-test
+    resource: ec2
+
   - name: ec2-invalid-ami
     resource: ec2
